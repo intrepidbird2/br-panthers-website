@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BRCS</title>
+    <style>
+        body {
+            background-color: black;
+            color: grey;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: red;
+        }
+        .smooth {
+            transition: all 0.3s ease-in-out;
+        }
+        .smooth:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="smooth">Welcome to Panthers Computer Science!</h1>
+    <p class="smooth">We love all things related to computer science and technology.</p>
+    <button class="smooth" id="joinButton">Join us!</button>
+
+    <script>
+        document.getElementById('joinButton').addEventListener('click', function() {
+            alert('Welcome to the club!');
+        });
+    </script>
+</body>
+</html>
