@@ -25,13 +25,23 @@
             background-color: grey;
             color: black;
         }
+        #image1, #image2 {
+            position: relative;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #image2 {
+            margin-top: -50px; /* Adjust this value to create the desired amount of overlap */
+        }
     </style>
 </head>
 <body>
     <h1 class="smooth">Welcome to Panthers Computer Science!</h1>
     <p class="smooth">We love all things related to computer science and technology.</p>
     <button class="smooth" id="joinButton">Join us!</button>
-    <img src="https://github.com/intrepidbird/br-panthers-website/assets/140008493/053ca132-f529-43ff-8207-dc59163b62e6" alt="Club Image">
+    <img id="image1" src="https://github.com/intrepidbird/br-panthers-website/assets/140008493/053ca132-f529-43ff-8207-dc59163b62e6" alt="Club Image">
+    <img id="image2" src="https://github.com/intrepidbird/br-panthers-website/assets/140008493/09a78636-c021-41ad-8282-05a7e7e1f62a" alt="Club Image">
 
     <script>
         document.getElementById('joinButton').addEventListener('click', function() {
@@ -40,5 +50,6 @@
     </script>
 </body>
 </html>
+
 
 
